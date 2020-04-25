@@ -11,8 +11,7 @@
 				continents = data;
 			});
 	})
-
-
+	
 </script>
 
 <style>
@@ -27,7 +26,7 @@
 	}
 
 	li {
-		list-style-type: georgian;
+		list-style-type: circle;
 	}
 </style>
 

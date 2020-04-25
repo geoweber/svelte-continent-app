@@ -1,30 +1,32 @@
 <script>
-  import { onMount } from "svelte";
-  import Continent from "./Continent.svelte";
   import Continents from "./Continents.svelte";
-
-  let continents;
-  let continent;
-
+  export let name;
 </script>
 
-<svelte:head>
-  <title>Svelte Continent App</title>
-</svelte:head>
-
 <style>
+  main {
+    text-align: left;
+    padding: 1em;
+    max-width: 240px;
+    margin: 0 auto;
+  }
 
-main {
-  background-color: lavenderblush;
-  font-size: 15px;
-}
   h1 {
-    font-size: 25px;
-	}
+    color: #ff3e00;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 100;
+  }
 
+  @media (min-width: 640px) {
+    main {
+      max-width: none;
+    }
+  }
 </style>
 
-  <h1>The Seven Continents Svelte App</h1>
 <main>
-		<Continents {continents} />
+  <h1>Hello {name}!</h1>
+
+  <Continents />
 </main>
